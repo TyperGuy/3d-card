@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+.container{
+    
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card{
+    transition: 0.2s ease;
+    transform-style: preserve-3d;
+    min-height: 85vh;
+    width: 25rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    box-shadow: 0px 20px 20px rgba(0,0,0,0.2),0px 0px 50px rgba(0,0,0,0.2);
+}
+
+.sneacker{
+
+    min-height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+.sneacker img{
+    width: 15rem;
+    z-index: 2;
+}
+
+.sneacker .circle{
+    width: 11rem;
+    height: 11rem;
+    background: linear-gradient(
+        to right,
+        rgba(242,14,116,0.75),
+        rgba(169,0,224,0.75)
+        
+    );
+
+    position: absolute;
+    border-radius: 50%;
+    
+}
+
+.info h1{
+    font-size: 2rem;
+    
+}
+.info h3{
+
+    font-size: 1.1rem;
+    padding: 1rem 0rem;
+    color:#585858;
+    
+}
+
+.sabores{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sabores button{
+    padding: 0.3rem 1rem;
+    background: none;
+    border:none;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    border-radius:30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+}
+
+button.active{
+    background: #585855;
+    color: white;
+}
+
+.purchase{
+
+    margin-top: 3rem;
+}
+
+.purchase button{
+    width: 100%;
+    padding: 1rem 0rem;
+    background: #f20e74;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bolder;
+    color: white;
+    border: none;
+}
